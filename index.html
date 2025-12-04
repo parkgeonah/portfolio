@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>박건아 | Security Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- 헤더 / 내비게이션 -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-mark">&gt;_</span>
+        <span class="logo-text">GeonAh Security</span>
+      </div>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero 섹션 -->
+  <section id="home" class="hero">
+    <div class="container hero-container">
+      <div class="hero-text">
+        <p class="hero-tag">Security Consultant / Penetration Tester</p>
+        <h1>
+          안녕하세요,<br />
+          <span class="highlight">박건아</span>입니다.
+        </h1>
+        <p class="hero-desc">
+          웹 취약점 진단과 모의해킹을 중심으로,  
+          실제 공격 흐름을 끝까지 따라가며 문제를 해결하는 보안 엔지니어를 목표로 하고 있습니다.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary">프로젝트 보기</a>
+          <a href="#contact" class="btn outline">Contact</a>
+        </div>
+        <div class="hero-meta">
+          <span>주요 키워드: Web Pentest · Network Security · bWAPP · SAFE DUGOUT</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-avatar">
+          <!-- 필요하면 프로필 이미지 <img src="img/profile.jpg" alt="Profile" /> -->
+          <span class="emoji">🛡️</span>
+        </div>
+        <div class="hero-card-body">
+          <h3>현재 관심 분야</h3>
+          <ul>
+            <li>웹 취약점 진단 / 모의해킹</li>
+            <li>주요정보통신기반시설 보안가이드 적용</li>
+            <li>네트워크 분리 및 방화벽 정책 설계</li>
+          </ul>
+          <p class="hero-card-note">
+            “단순한 취약점 나열이 아닌,  
+            <strong>시나리오 기반 공격 · 방어 흐름</strong>을 고민합니다.”
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About 섹션 -->
+  <section id="about" class="section">
+    <div class="container section-container">
+      <div class="section-header">
+        <h2>About Me</h2>
+        <p>“반복적인 업무 대신, 끝까지 파고드는 문제 해결이 있는 보안을 선택했습니다.”</p>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            외식조리경영 전공에서 시작해, 보안 사고 뉴스를 계기로 진로를 전환했습니다.  
+            bWAPP와 Bee-Box 환경에서 SQL Injection, XSS, 파일 업로드 취약점 등을 직접 재현하며  
+            공격자의 시각에서 웹 서비스를 바라보는 훈련을 해왔습니다.
+          </p>
+          <p>
+            특히 파일 업로드 취약점, SQL Injection, 세션 고정, 평문전송 등은  
+            단순히 PoC로 끝내지 않고, 실제로 DB 조회·조작, 웹쉘 업로드, 세션 하이재킹까지  
+            전 과정을 따라가며 <strong>공격과 방어 모두를 이해하려고 노력</strong>했습니다.
+          </p>
+          <p>
+            최근에는 SAFE DUGOUT / BullpenTalk 프로젝트를 통해  
+            커뮤니티·중고거래·포인트 시스템이 있는 웹 서비스를 직접 개발하고,  
+            동일 환경에 대해 모의해킹·보고서를 작성하며  
+            “개발–공격–방어” 전체 흐름을 경험하고 있습니다.
+          </p>
+        </div>
+        <div class="about-cards">
+          <div class="info-card">
+            <h3>Key Keywords</h3>
+            <ul>
+              <li>Web Vulnerability Assessment</li>
+              <li>Penetration Testing (OWASP Top 10)</li>
+              <li>Network & System Hardening</li>
+              <li>주통기반시설 보안가이드 리서치</li>
+            </ul>
+          </div>
+          <div class="info-card">
+            <h3>Tech Stack</h3>
+            <ul>
+              <li>Language: PHP, Java(JSP), Python(크롤링)</li>
+              <li>DB: MariaDB, Oracle</li>
+              <li>Infra: Rocky Linux, Windows Server, VMware</li>
+              <li>Tools: Burp Suite, OWASP ZAP, Nmap, Nikto, Metasploit</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills 섹션 -->
+  <section id="skills" class="section section-alt">
+    <div class="container section-container">
+      <div class="section-header">
+        <h2>Skills</h2>
+        <p>보안 진단과 모의해킹에 특화된 역량들입니다.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h3>Security & Pentest</h3>
+          <ul>
+            <li>OWASP Top 10 기반 웹 취약점 진단</li>
+            <li>SQL Injection / XSS / File Upload / CSRF</li>
+            <li>세션 관리 취약점(고정, 탈취, 평문전송) 분석</li>
+            <li>주요정보통신기반시설 취약점 점검 항목 매핑</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Infra & Network</h3>
+          <ul>
+            <li>VLAN / L3 스위치 / 라우팅 / GRE + IPsec</li>
+            <li>방화벽(firewalld) zone/rich-rule 정책 설계</li>
+            <li>Windows AD/DNS/DHCP 구축 및 보안 설정</li>
+            <li>로그 분석 및 패킷 분석(Wireshark 등)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Development</h3>
+          <ul>
+            <li>Java(JSP/Servlet) 기반 웹 서비스 개발</li>
+            <li>PHP 기반 취약 웹 애플리케이션 구현(bWAPP 스타일)</li>
+            <li>MyBatis / SQL 설계 및 ERD 작성</li>
+            <li>HTML/CSS/JavaScript를 활용한 프론트 개발</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Reporting & Communication</h3>
+          <ul>
+            <li>모의해킹·취약점 진단 보고서 작성 (CVSS 3.1)</li>
+            <li>기술 내용을 비전공자에게 설명하는 문서화 능력</li>
+            <li>팀장 역할로 일정 관리 및 코드 리뷰 진행</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects 섹션 -->
+  <section id="projects" class="section">
+    <div class="container section-container">
+      <div class="section-header">
+        <h2>Projects</h2>
+        <p>개발과 모의해킹을 함께 진행했던 대표 프로젝트들입니다.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- 프로젝트 카드 1 -->
+        <article class="project-card">
+          <div class="project-badge">Main</div>
+          <h3>SAFE DUGOUT / BullpenTalk</h3>
+          <p class="project-subtitle">
+            야구 커뮤니티 & 굿즈 거래 플랫폼 + 시나리오 기반 모의해킹
+          </p>
+          <p class="project-desc">
+            KBO 팀별 커뮤니티, 중고거래, 포인트 충전, 관리자 페이지 등을 포함한  
+            야구 커뮤니티 웹 서비스를 직접 설계·구축하고,  
+            “분노한 꼴등팬” 시나리오를 기반으로 동일 서비스에 대한 모의해킹을 수행했습니다.
+          </p>
+          <ul class="project-list">
+            <li>Java/JSP & PHP, MariaDB 기반 기능 구현</li>
+            <li>로그인, 게시글 등록, 포인트 충전, 관리자 페이지 등 주요 기능 개발</li>
+            <li>SQL Injection, XSS, 파일 업로드, 세션 관리 취약점 등 식별 및 개선안 제시</li>
+            <li>CVSS 3.1 기반 위험도 산정 및 보고서 작성</li>
+          </ul>
+          <div class="project-links">
+            <!-- 깃허브 주소 있으면 넣기 -->
+            <a href="https://github.com/parkgeonah" target="_blank" class="link">GitHub 바로가기</a>
+            <!-- <a href="#" target="_blank" class="link">프로젝트 상세 보기</a> -->
+          </div>
+          <div class="project-tags">
+            <span>Java/JSP</span>
+            <span>PHP</span>
+            <span>MariaDB</span>
+            <span>Pentest</span>
+          </div>
+        </article>
+
+        <!-- 프로젝트 카드 2 -->
+        <article class="project-card">
+          <h3>bWAPP / Bee-Box Pentest Lab</h3>
+          <p class="project-subtitle">
+            OWASP Top 10 중심 웹 취약점 실습 & 보고서
+          </p>
+          <p class="project-desc">
+            Bee-Box 환경에서 SQL Injection, XSS, CSRF, 파일 업로드, 세션 관리 취약점 등  
+            다양한 공격 기법을 직접 재현하고, 각 취약점에 대해  
+            개요·공격 시나리오·영향도·개선 권고를 포함한 진단 보고서를 작성했습니다.
+          </p>
+          <ul class="project-list">
+            <li>Burp Suite, OWASP ZAP, Nikto, Nmap 등 도구 활용</li>
+            <li>SQLi (Boolean, Error, UNION, Time-based) 전 유형 재현</li>
+            <li>웹쉘 업로드 후 Meterpreter 세션 획득까지 전체 흐름 수행</li>
+            <li>주요정보통신기반시설 가이드와 매핑한 점검 항목 정리</li>
+          </ul>
+          <div class="project-tags">
+            <span>bWAPP</span>
+            <span>Burp Suite</span>
+            <span>Metasploit</span>
+            <span>Report</span>
+          </div>
+        </article>
+
+        <!-- 프로젝트 카드 3 -->
+        <article class="project-card">
+          <h3>네트워크 분리 & 보안 인프라 구축</h3>
+          <p class="project-subtitle">
+            VLAN, 방화벽, Windows AD/DNS/DHCP 기반 보안 인프라
+          </p>
+          <p class="project-desc">
+            GNS3 / Packet Tracer / VMware 환경에서  
+            본사-지사 구조, VLAN 기반 네트워크 분리,  
+            GRE + IPsec 터널링, 방화벽 정책, Windows AD/DNS/DHCP 서버를 구성했습니다.
+          </p>
+          <ul class="project-list">
+            <li>서버/DMZ/사용자망 분리 및 ACL/방화벽 정책 적용</li>
+            <li>firewalld zone 및 rich-rule 기반 접근 제어</li>
+            <li>DNS 스푸핑·MITM 등 공격 시나리오 구성 및 대응</li>
+            <li>로그를 통한 접속·차단 이력 분석 및 문서화</li>
+          </ul>
+          <div class="project-tags">
+            <span>VLAN</span>
+            <span>firewalld</span>
+            <span>Windows Server</span>
+            <span>GNS3</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline 섹션 -->
+  <section id="timeline" class="section section-alt">
+    <div class="container section-container">
+      <div class="section-header">
+        <h2>Timeline</h2>
+        <p>보안을 공부하게 된 계기부터 최근 프로젝트까지의 흐름입니다.</p>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2024</span>
+            <h3>전공 전환 & 보안 입문</h3>
+            <p>
+              외식조리경영 전공에서 진로를 전환,  
+              웹 기초 · 네트워크 기초 · 리눅스/윈도우 서버 기초를 학습하며  
+              보안 분야로의 방향을 구체화했습니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 상반기</span>
+            <h3>bWAPP 기반 웹 모의해킹 실습</h3>
+            <p>
+              bWAPP/Bee-Box 환경에서 SQLi, XSS, CSRF, 파일 업로드 등  
+              다양한 취약점을 직접 재현하고, Burp Suite 중심 실습을 진행했습니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">2025 하반기</span>
+            <h3>SAFE DUGOUT / BullpenTalk 프로젝트</h3>
+            <p>
+              야구 커뮤니티 & 굿즈 거래 웹 서비스를 개발하고,  
+              “꼴등팬” 시나리오 기반 모의해킹, 취약점 진단 보고서를 수행했습니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Now</span>
+            <h3>보안 컨설팅 / 모의해킹 직무 준비</h3>
+            <p>
+              취약점 진단·보고서 작성 역량을 고도화하며,  
+              실무에서 바로 활용 가능한 공격/방어 흐름을 더 깊게 공부하고 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact 섹션 -->
+  <section id="contact" class="section">
+    <div class="container section-container">
+      <div class="section-header">
+        <h2>Contact</h2>
+        <p>협업 제안, 포트폴리오 관련 문의를 환영합니다.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Info</h3>
+          <ul>
+            <li><strong>Name</strong> : 박건아</li>
+            <li><strong>Role</strong> : Security / Penetration Testing 지망</li>
+            <li><strong>Email</strong> : <a href="mailto:example@gmail.com">example@gmail.com</a></li>
+            <li><strong>GitHub</strong> : <a href="https://github.com/parkgeonah" target="_blank">github.com/parkgeonah</a></li>
+            <!-- <li><strong>Blog</strong> : <a href="#" target="_blank">기술 블로그 주소</a></li> -->
+          </ul>
+        </div>
+        <form class="contact-form" onsubmit="return false;">
+          <h3>간단한 메세지 남기기 (UI용)</h3>
+          <div class="form-group">
+            <label for="name">이름</label>
+            <input type="text" id="name" placeholder="이름을 입력해주세요." />
+          </div>
+          <div class="form-group">
+            <label for="email">이메일</label>
+            <input type="email" id="email" placeholder="연락받을 이메일을 입력해주세요." />
+          </div>
+          <div class="form-group">
+            <label for="message">메세지</label>
+            <textarea id="message" rows="4" placeholder="문의 내용을 입력해주세요."></textarea>
+          </div>
+          <button class="btn primary" type="submit">임시 버튼 (실제 전송 X)</button>
+          <p class="form-note">
+            실제 메일 전송 기능은 서버 연동(PHP, Node 등)이 필요합니다.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <p>© <span id="year"></span> GeonAh Security Portfolio. All rights reserved.</p>
+      <p class="footer-sub">
+        Built with HTML · CSS · JavaScript
+      </p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
