@@ -315,43 +315,71 @@ ul {
 }
 
 /* Skills */
+/* ================= Skills ================= */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
 }
 
+/* 기본 카드 */
 .skill-group {
-  background: rgba(17, 25, 48, 0.95);
+  background: rgba(17, 25, 48, 0.96); /* 섹션보다 살짝 밝게 */
   border-radius: 18px;
-  padding: 16px 18px;
-  border: 1px solid rgba(55, 65, 81, 0.9);
+  padding: 18px 20px;
+
+  border: 1px solid rgba(148, 163, 184, 0.18);
+
+  /* 🔥 카드감 핵심 */
+  box-shadow:
+    0 10px 28px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+/* hover – 아주 은은하게 */
+.skill-group:hover {
+  transform: translateY(-4px);
+  border-color: rgba(59, 130, 246, 0.35);
+  box-shadow:
+    0 16px 42px rgba(0, 0, 0, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
 }
 
 /* 카드 제목 */
 .skill-group h3 {
   font-size: 1rem;
   font-weight: 600;
-  color: #f9fafb;        /* 🔽 살짝만 축소 */
-  margin-bottom: 10px;
+  color: #f9fafb;
+  margin-bottom: 12px;
+  letter-spacing: -0.2px;
 }
 
-/* 기본 리스트 (툴 이름) */
+/* 기본 리스트 */
 .skill-group ul {
-  font-size: 0.85rem;          /* 🔽 기존 0.9 → 0.85 */
+  font-size: 0.85rem;
   color: #cbd5e1;
   padding-left: 14px;
   list-style: disc;
-  line-height: 1.5;
+  line-height: 1.55;
 }
 
-/* 설명 줄 (└ 이하 설명용) */
+/* 리스트 아이템 간격 */
+.skill-group ul li {
+  margin-bottom: 8px;
+}
+
+/* 설명 줄 (툴 설명) */
 .skill-group ul li span,
 .skill-group ul li .tool-desc {
   display: block;
   margin-top: 4px;
-  font-size: 0.8rem;           /* 🔽 설명은 더 작게 */
-  color: #9ca3af;
+  font-size: 0.8rem;
+  color: #94a3b8;
   line-height: 1.45;
 }
 
