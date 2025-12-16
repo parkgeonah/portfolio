@@ -38,10 +38,7 @@
   <div class="container hero-container">
     <div class="hero-text">
       <p class="hero-tag">Security Consultant / Penetration Tester</p>
-      <h1>
-        안녕하세요,<br />
-        <span class="highlight">박건아</span>입니다.
-      </h1>
+      <h1>안녕하세요,<br /><span class="highlight">박건아</span>입니다.</h1>
       <p class="hero-desc">
         웹 서비스를 이해하고,<br />
         실제 공격 시나리오로 검증하는 보안 인재를 지향합니다.
@@ -62,46 +59,13 @@
       <p>“개발 경험을 기반으로 보안을 선택했습니다.”</p>
     </div>
 
-    <div class="about-grid">
-      <div class="about-text">
-        <p>
-          외식조리경영 전공 이후, 문제를 찾고 파악하는 과정이 
-          제 성향과 맞다는 것을 느꼈고
-          보안 분야로 진로를 전환했습니다.
-        </p>
-        <p>
-          웹 서비스를 직접 개발하며 구조를 이해했고,
-          이후 동일 서비스를 공격자 관점에서 분석하며
-          취약점 진단과 모의해킹을 수행했습니다.
-        </p>
-        <p>
-          단순 취약점 나열이 아닌,
-          <strong>공격 → 영향 → 개선</strong> 흐름을 설명할 수 있는
-          보안 컨설턴트를 목표로 하고 있습니다.
-        </p>
-      </div>
-
-      <div class="about-cards">
-        <div class="info-card">
-          <h3>Key Keywords</h3>
-          <ul>
-            <li>Web Penetration Testing</li>
-            <li>Scenario-based Attack</li>
-            <li>Secure Coding</li>
-            <li>CVSS 3.1</li>
-          </ul>
-        </div>
-        <div class="info-card">
-          <h3>Tech Stack</h3>
-          <ul>
-            <li>PHP, Java(JSP)</li>
-            <li>MariaDB</li>
-            <li>Rocky Linux, Windows Server</li>
-            <li>Burp Suite, Nmap</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    <p>
+      웹 서비스를 직접 개발하며 구조를 이해했고,
+      이후 동일 서비스를 공격자 관점에서 분석하며
+      취약점 진단과 모의해킹을 수행했습니다.
+      단순 취약점 나열이 아닌
+      <strong>공격 → 영향 → 개선</strong> 흐름을 설명하는 보안 컨설턴트를 목표로 합니다.
+    </p>
   </div>
 </section>
 
@@ -110,7 +74,6 @@
   <div class="container section-container">
     <div class="section-header">
       <h2>Skills</h2>
-      <p>실전 중심 보안 역량</p>
     </div>
 
     <div class="skills-grid">
@@ -119,7 +82,7 @@
         <ul>
           <li>OWASP Top 10 기반 취약점 진단</li>
           <li>SQL Injection / XSS / CSRF</li>
-          <li>파일 업로드 / 세션 관리 취약점</li>
+          <li>파일 업로드 / 세션 관리</li>
         </ul>
       </div>
 
@@ -127,17 +90,7 @@
         <h3>Secure Coding</h3>
         <ul>
           <li>Prepared Statement 적용</li>
-          <li>입력값 검증 및 인가 체크</li>
-          <li>취약 로직 개선</li>
-        </ul>
-      </div>
-
-      <div class="skill-group">
-        <h3>Infra & System</h3>
-        <ul>
-          <li>Linux / Windows 보안 설정</li>
-          <li>firewalld 접근 제어</li>
-          <li>로그 분석</li>
+          <li>입력값 검증 및 인가 처리</li>
         </ul>
       </div>
 
@@ -145,7 +98,8 @@
         <h3>Reporting</h3>
         <ul>
           <li>CVSS 3.1 위험도 산정</li>
-          <li>모의해킹 보고서 작성</li>
+          <li>CWE 매핑표 작성</li>
+          <li>모의해킹 보고서</li>
         </ul>
       </div>
     </div>
@@ -157,53 +111,73 @@
   <div class="container section-container">
     <div class="section-header">
       <h2>Projects</h2>
-      <p>개발 경험과 최종 보안 프로젝트</p>
+      <p>Google Drive에 정리된 단계별 산출물과 연계된 포트폴리오입니다.</p>
     </div>
 
     <div class="projects-grid">
 
-      <!-- Web Dev -->
+      <!-- Web Development -->
       <article class="project-card">
         <div class="project-badge">Web Dev</div>
         <h3>BullpenTalk Web Service</h3>
         <ul class="project-list">
-          <li>커뮤니티 / 중고거래 기능 구현</li>
-          <li>JSP / Python 데이터 크롤링 / OracleDB 기반 개발</li>
+          <li>커뮤니티 / 중고거래 기능 개발</li>
+          <li>JSP / Python 데이터 크롤링 / OracleDB 기반</li>
           <li>인증·인가 구조 이해</li>
         </ul>
       </article>
-      
-      <!-- Bee-Box / bWAPP Pentest -->
+
+      <!-- Bee-Box -->
       <article class="project-card">
-        <div class="project-badge">Pentest Lab</div>
+        <div class="project-badge">Personal</div>
         <h3>Bee-Box / bWAPP 모의해킹</h3>
-        <p class="project-subtitle">
-          OWASP Top 10 기반 웹 취약점 실습
-        </p>
         <ul class="project-list">
-          <li>SQL Injection (Error / Union / Blind)</li>
-          <li>XSS (Stored / Reflected)</li>
-          <li>CSRF / 파일 업로드 / 세션 관리 취약점</li>
-          <li>Burp Suite를 활용한 요청 분석 및 공격 재현</li>
+          <li>OWASP Top 10 실습</li>
+          <li>SQLi / XSS / CSRF 공격 재현</li>
+          <li>※ Drive 내 <strong>개인/</strong> 폴더</li>
         </ul>
-        <div class="project-tags">
-          <span>bWAPP</span>
-          <span>Bee-Box</span>
-          <span>OWASP Top 10</span>
-          <span>Web Pentest</span>
-        </div>
+
+        <a href="https://drive.google.com/drive/folders/1fv_Q5zfg2V9TPAHeECFHnfQP7tc93Wa7"
+           target="_blank"
+           class="btn outline">
+          📂 Google Drive 열기
+        </a>
       </article>
-      
-      <!-- Final Project -->
+
+      <!-- Mid -->
+      <article class="project-card">
+        <div class="project-badge">Mid</div>
+        <h3>중간 프로젝트 산출물</h3>
+        <ul class="project-list">
+          <li>중간 발표 자료</li>
+          <li>포트폴리오 정리</li>
+          <li>※ Drive 내 <strong>중간/</strong> 폴더</li>
+        </ul>
+
+        <a href="https://drive.google.com/drive/folders/1fv_Q5zfg2V9TPAHeECFHnfQP7tc93Wa7"
+           target="_blank"
+           class="btn outline">
+          📂 Google Drive 열기
+        </a>
+      </article>
+
+      <!-- Final -->
       <article class="project-card">
         <div class="project-badge">Final</div>
         <h3>SAFE DUGOUT / BullpenTalk</h3>
         <ul class="project-list">
           <li>시나리오 기반 모의해킹</li>
-          <li>SQLi, XSS, CSRF, 파일 업로드</li>
-          <li>공격 → 개선 → 보고서</li>
+          <li>최종 보고서 / CWE 매핑표</li>
+          <li>※ Drive 내 <strong>최종/</strong> 폴더</li>
         </ul>
+
+        <a href="https://drive.google.com/drive/folders/1fv_Q5zfg2V9TPAHeECFHnfQP7tc93Wa7"
+           target="_blank"
+           class="btn primary">
+          📂 최종 산출물 보기 (Google Drive)
+        </a>
       </article>
+
     </div>
   </div>
 </section>
@@ -215,28 +189,12 @@
       <h2>Timeline</h2>
     </div>
 
-    <div class="timeline">
-      <div class="timeline-item">
-        <span class="timeline-date">2025 6월</span>
-        <p>웹·서버 기초 학습</p>
-      </div>
-      <div class="timeline-item">
-        <span class="timeline-date">2025 7~8월</span>
-        <p>BullpenTalk 웹 개발</p>
-      </div>
-      <div class="timeline-item">
-        <span class="timeline-date">2025 11월</span>
-        <p>불펜토크 서비스 최종 모의해킹</p>
-      </div>
-      <div class="timeline-item">
-        <span class="timeline-date">2025 11 ~ 12월</span>
-        <p>불펜토크 서비스 취약점 진단 및 모의해킹</p>
-      </div>
-      <div class="timeline-item">
-        <span class="timeline-date">Now</span>
-        <p>보안 컨설팅 / 모의해킹 직무 준비</p>
-      </div>
-    </div>
+    <ul>
+      <li>2025 6월 – 웹·서버 기초 학습</li>
+      <li>2025 7월~8월 – BullpenTalk 웹 개발</li>
+      <li>2025 11월 - bee-box 웹 모의해킹</li>
+      <li>2025 11월~12월 – SAFE DUGOUT 최종 모의해킹</li>
+    </ul>
   </div>
 </section>
 
@@ -246,9 +204,8 @@
     <div class="section-header">
       <h2>Contact</h2>
     </div>
-
     <ul>
-      <li>Email : pga092928@gmail.com</li>
+      <li>Email : example@gmail.com</li>
       <li>GitHub : github.com/parkgeonah</li>
     </ul>
   </div>
