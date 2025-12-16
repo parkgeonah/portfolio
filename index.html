@@ -74,37 +74,73 @@
   <div class="container section-container">
     <div class="section-header">
       <h2>Skills</h2>
+      <p>웹 · 서버 · 네트워크 전반을 이해하는 모의해킹 역량</p>
     </div>
 
     <div class="skills-grid">
+
+      <!-- Web / Application Security -->
       <div class="skill-group">
-        <h3>Web Pentest</h3>
+        <h3>Web & Application Security</h3>
         <ul>
-          <li>OWASP Top 10 기반 취약점 진단</li>
-          <li>SQL Injection / XSS / CSRF</li>
-          <li>파일 업로드 / 세션 관리</li>
+          <li>OWASP Top 10 기반 웹 취약점 진단</li>
+          <li>SQL Injection, XSS, CSRF, File Upload</li>
+          <li>Session / Cookie 기반 인증 구조 이해</li>
+          <li>Burp Suite를 활용한 요청 분석 및 공격 재현</li>
         </ul>
       </div>
 
+      <!-- Secure Coding / Development -->
       <div class="skill-group">
-        <h3>Secure Coding</h3>
+        <h3>Secure Coding & Web Development</h3>
         <ul>
-          <li>Prepared Statement 적용</li>
-          <li>입력값 검증 및 인가 처리</li>
+          <li>Java (OOP, Exception Handling)</li>
+          <li>JSP / Servlet 기반 MVC2 패턴 구현</li>
+          <li>Prepared Statement 적용 및 입력값 검증</li>
+          <li>JavaScript · Fetch API 기반 비동기 처리</li>
         </ul>
       </div>
 
+      <!-- OS / Server -->
       <div class="skill-group">
-        <h3>Reporting</h3>
+        <h3>Linux & Windows Server</h3>
         <ul>
+          <li>Linux(Ubuntu, CentOS) 서버 구축 및 운영</li>
+          <li>Windows Server 사용자 · 권한 · NTFS 관리</li>
+          <li>Apache / Tomcat 설치 및 서비스 운영</li>
+          <li>UFW, iptables 기초 방화벽 설정</li>
+          <li>로그 분석 및 접근 제어</li>
+        </ul>
+      </div>
+
+      <!-- Network -->
+      <div class="skill-group">
+        <h3>Network Fundamentals</h3>
+        <ul>
+          <li>TCP/IP, OSI 7 Layer 이해</li>
+          <li>VLAN 구성, DHCP 풀 설정</li>
+          <li>NAT 설계 및 내부/외부/DMZ 분리</li>
+          <li>정적 라우팅, OSPF, EIGRP 개념 이해</li>
+          <li>Wireshark 기반 패킷 흐름 분석</li>
+        </ul>
+      </div>
+
+      <!-- Tools & Pentest -->
+      <div class="skill-group">
+        <h3>Pentest Tools & Reporting</h3>
+        <ul>
+          <li>Nmap 기반 포트 · 서비스 스캔</li>
+          <li>Bee-Box(bWAPP) 모의해킹 실습</li>
+          <li>Hydra 기반 인증 우회 실습</li>
           <li>CVSS 3.1 위험도 산정</li>
-          <li>CWE 매핑표 작성</li>
-          <li>모의해킹 보고서</li>
+          <li>CWE 매핑 및 취약점 보고서 작성</li>
         </ul>
       </div>
+
     </div>
   </div>
 </section>
+
 
 <!-- ================= Projects ================= -->
 <section id="projects" class="section">
@@ -131,52 +167,57 @@
       <article class="project-card">
         <div class="project-badge">Personal</div>
         <h3>Bee-Box / bWAPP 모의해킹</h3>
+
         <ul class="project-list">
-          <li>OWASP Top 10 실습</li>
-          <li>SQLi / XSS / CSRF 공격 재현</li>
-          <li>※ Drive 내 <strong>개인/</strong> 폴더</li>
+          <li>OWASP Top 10 기반 웹 취약점 실습</li>
+          <li>SQL Injection, XSS, CSRF 공격 재현</li>
+          <li>Burp Suite · Wireshark 분석</li>
         </ul>
 
-        <a href="https://drive.google.com/drive/folders/1fv_Q5zfg2V9TPAHeECFHnfQP7tc93Wa7"
-           target="_blank"
-           class="btn outline">
-          📂 Google Drive 열기
+        <a href="https://drive.google.com/file/d/1gb2_EMyCN8gptCC6ROpJvrudlSWW43b_/view?usp=drive_link"
+         target="_blank"
+         class="btn outline">
+        📄 Bee-Box 모의해킹 보고서 (PDF)
         </a>
       </article>
+
 
       <!-- Mid -->
       <article class="project-card">
         <div class="project-badge">Mid</div>
         <h3>중간 프로젝트 산출물</h3>
         <ul class="project-list">
-          <li>중간 발표 자료</li>
-          <li>포트폴리오 정리</li>
-          <li>※ Drive 내 <strong>중간/</strong> 폴더</li>
+          <li>중간 발표 자료(PPT)</li>
+          <li>포트폴리오 구조 정리</li>
+          <li>백엔드 코드 및 문서 버전 관리</li>
         </ul>
-
-        <a href="https://drive.google.com/drive/folders/1fv_Q5zfg2V9TPAHeECFHnfQP7tc93Wa7"
+      
+        <a href="https://github.com/Team1-SafeDugout/SafeDugout_backend"
            target="_blank"
            class="btn outline">
-          📂 Google Drive 열기
+          🔗 GitHub 저장소 바로가기
         </a>
       </article>
+
 
       <!-- Final -->
       <article class="project-card">
         <div class="project-badge">Final</div>
         <h3>SAFE DUGOUT / BullpenTalk</h3>
+      
         <ul class="project-list">
-          <li>시나리오 기반 모의해킹</li>
-          <li>최종 보고서 / CWE 매핑표</li>
-          <li>※ Drive 내 <strong>최종/</strong> 폴더</li>
+          <li>시나리오 기반 모의해킹 수행</li>
+          <li>SQLi, XSS, File Upload 취약점 검증</li>
+          <li>CVSS 3.1 · CWE 매핑</li>
         </ul>
-
-        <a href="https://drive.google.com/drive/folders/1fv_Q5zfg2V9TPAHeECFHnfQP7tc93Wa7"
+      
+        <a href="https://drive.google.com/file/d/1lEAKpg7ggKupfuEfoTniFkn27zCcNwkw/view?usp=drive_link"
            target="_blank"
            class="btn primary">
-          📂 최종 산출물 보기 (Google Drive)
+          📄 최종 모의해킹 보고서 (PDF)
         </a>
       </article>
+
 
     </div>
   </div>
@@ -210,6 +251,28 @@
     </ul>
   </div>
 </section>
+  
+<!-- ================= Portfolio Files ================= -->
+<section id="files" class="section section-alt">
+  <div class="container section-container">
+    <div class="section-header">
+      <h2>Portfolio Files</h2>
+      <p>세부 산출물 및 전체 자료 모음</p>
+    </div>
+
+    <p>
+      아래 링크에는 개인 실습, 중간 발표 자료, 최종 프로젝트 산출물이
+      단계별로 정리되어 있습니다.
+    </p>
+
+    <a href="https://drive.google.com/drive/folders/1fv_Q5zfg2V9TPAHeECFHnfQP7tc93Wa7"
+       target="_blank"
+       class="btn outline">
+      📂 전체 산출물 Google Drive
+    </a>
+  </div>
+</section>
+
 
 <footer class="footer">
   <p>© GeonAh Security Portfolio</p>
