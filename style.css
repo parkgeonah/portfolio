@@ -321,27 +321,39 @@ ul {
   gap: 22px;
 }
 
-/* Skills - Tool 설명 가독성 조정 */
-.skill-group li {
-  font-size: 0.9rem;          /* 툴 이름 */
+.skill-group {
+  background: rgba(15, 23, 42, 0.95);
+  border-radius: 18px;
+  padding: 16px 18px;
+  border: 1px solid rgba(55, 65, 81, 0.9);
+}
+
+/* 카드 제목 */
+.skill-group h3 {
+  font-size: 0.95rem;          /* 🔽 살짝만 축소 */
+  margin-bottom: 10px;
+  color: #f9fafb;
+}
+
+/* 기본 리스트 (툴 이름) */
+.skill-group ul {
+  font-size: 0.85rem;          /* 🔽 기존 0.9 → 0.85 */
+  color: #d1d5db;
+  padding-left: 14px;
+  list-style: disc;
   line-height: 1.5;
 }
 
-.skill-group li strong {
-  font-size: 0.9rem;
+/* 설명 줄 (└ 이하 설명용) */
+.skill-group ul li span,
+.skill-group ul li .tool-desc {
+  display: block;
+  margin-top: 4px;
+  font-size: 0.8rem;           /* 🔽 설명은 더 작게 */
+  color: #9ca3af;
+  line-height: 1.45;
 }
 
-.skill-group li br + span,
-.skill-group li {
-  color: #444;
-}
-
-/* 설명 줄 (└ 로 시작하는 부분) */
-.skill-group li small,
-.skill-group li .desc {
-  font-size: 0.82rem;
-  color: #666;
-}
 
 
 /* Projects */
