@@ -15,7 +15,7 @@
 </head>
 <body>
 
-<!-- ================= Header ================= -->
+<!-- Header -->
 <header class="header">
   <div class="container nav-container">
     <div class="logo">
@@ -30,175 +30,84 @@
       <a href="#timeline">Timeline</a>
       <a href="#contact">Contact</a>
     </nav>
-    <button class="nav-toggle" id="navToggle">☰</button>
   </div>
 </header>
 
-<!-- ================= Hero ================= -->
+<!-- Hero -->
 <section id="home" class="hero">
   <div class="container hero-container">
     <div class="hero-text">
       <p class="hero-tag">Security Consultant / Penetration Tester</p>
-      <h1>
-        안녕하세요,<br />
-        <span class="highlight">박건아</span>입니다.
-      </h1>
+      <h1>안녕하세요,<br /><span class="highlight">박건아</span>입니다.</h1>
       <p class="hero-desc">
-        웹 취약점 진단과 모의해킹을 중심으로,<br />
-        실제 공격 흐름을 끝까지 따라가는 보안 엔지니어를 목표로 합니다.
+        웹 서비스를 이해하고,<br />
+        실제 공격 시나리오로 검증하는 보안 인재를 지향합니다.
       </p>
       <div class="hero-buttons">
         <a href="#projects" class="btn primary">프로젝트 보기</a>
-        <a href="#contact" class="btn outline">Contact</a>
-      </div>
-      <div class="hero-meta">
-        <span>Web Pentest · SAFE DUGOUT · CVSS 3.1</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= About ================= -->
-<section id="about" class="section">
-  <div class="container section-container">
-    <div class="section-header">
-      <h2>About Me</h2>
-      <p>“끝까지 파고드는 문제 해결이 있는 보안을 선택했습니다.”</p>
-    </div>
-
-    <div class="about-grid">
-      <div class="about-text">
-        <p>
-          외식조리경영 전공에서 진로를 전환해 보안 분야에 입문했습니다.
-          bWAPP/Bee-Box 환경에서 SQL Injection, XSS, 파일 업로드 취약점을
-          직접 재현하며 공격자 관점의 사고를 훈련해 왔습니다.
-        </p>
-        <p>
-          단순 PoC에 그치지 않고 DB 조회·조작, 웹쉘 업로드,
-          세션 하이재킹까지 전체 공격 흐름을 따라가며
-          <strong>공격과 방어를 함께 이해</strong>하는 데 집중했습니다.
-        </p>
-        <p>
-          최종 프로젝트인 SAFE DUGOUT / BullpenTalk에서는
-          웹 서비스를 직접 개발하고, 동일 환경에 대해
-          시나리오 기반 모의해킹과 취약점 진단 보고서를 수행했습니다.
-        </p>
-      </div>
-
-      <div class="about-cards">
-        <div class="info-card">
-          <h3>Key Keywords</h3>
-          <ul>
-            <li>Web Vulnerability Assessment</li>
-            <li>Penetration Testing</li>
-            <li>Scenario-based Attack</li>
-            <li>Secure Coding</li>
-          </ul>
-        </div>
-        <div class="info-card">
-          <h3>Tech Stack</h3>
-          <ul>
-            <li>PHP, Java(JSP), Python</li>
-            <li>MariaDB, Oracle</li>
-            <li>Rocky Linux, Windows Server</li>
-            <li>Burp Suite, ZAP, Nmap</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= Skills ================= -->
-<section id="skills" class="section section-alt">
-  <div class="container section-container">
-    <div class="section-header">
-      <h2>Skills</h2>
-      <p>실전 중심의 보안 역량입니다.</p>
-    </div>
-
-    <div class="skills-grid">
-      <div class="skill-group">
-        <h3>Web Pentest</h3>
-        <ul>
-          <li>OWASP Top 10 기반 취약점 진단</li>
-          <li>SQLi / XSS / CSRF / File Upload</li>
-          <li>세션 관리 취약점 분석</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <h3>Infra & System</h3>
-        <ul>
-          <li>Linux / Windows 서버 보안 설정</li>
-          <li>firewalld 기반 접근제어</li>
-          <li>로그 분석</li>
-        </ul>
-      </div>
-      <div class="skill-group">
-        <h3>Reporting</h3>
-        <ul>
-          <li>CVSS 3.1 위험도 산정</li>
-          <li>모의해킹·취약점 진단 보고서</li>
-          <li>비전공자 대상 문서화</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= Projects ================= -->
+<!-- Projects -->
 <section id="projects" class="section">
   <div class="container section-container">
     <div class="section-header">
       <h2>Projects</h2>
-      <p>최종 프로젝트 기반 실전 포트폴리오</p>
+      <p>개발 경험과 최종 보안 프로젝트를 분리하여 정리했습니다.</p>
     </div>
 
     <div class="projects-grid">
 
-      <!-- Main Project -->
+      <!-- Web Development Project -->
+      <article class="project-card">
+        <div class="project-badge">Web Dev</div>
+        <h3>BullpenTalk Web Service</h3>
+        <p class="project-subtitle">
+          야구 커뮤니티 & 굿즈 거래 웹 서비스 개발
+        </p>
+
+        <ul class="project-list">
+          <li>회원가입 / 로그인 / 게시글 / 중고거래 기능 구현</li>
+          <li>JSP 기반 서버 로직 개발</li>
+          <li>OracleDB 설계 및 CRUD 구현</li>
+          <li>보안 점검을 고려한 구조 설계 경험</li>
+        </ul>
+
+        <div class="project-tags">
+          <span>Web Development</span>
+          <span>PHP</span>
+          <span>JSP</span>
+          <span>MariaDB</span>
+        </div>
+      </article>
+
+      <!-- Final Security Project -->
       <article class="project-card">
         <div class="project-badge">Final</div>
         <h3>SAFE DUGOUT / BullpenTalk</h3>
         <p class="project-subtitle">
-          야구 커뮤니티 & 굿즈 거래 플랫폼 · 시나리오 기반 모의해킹
-        </p>
-
-        <p class="project-desc">
-          웹 서비스를 직접 개발하고,
-          ‘분노한 꼴등팬’ 시나리오를 기반으로
-          실제 공격자 관점의 모의해킹을 수행했습니다.
+          시나리오 기반 최종 모의해킹 프로젝트
         </p>
 
         <ul class="project-list">
-          <li>SQL Injection, XSS, CSRF, 파일 업로드 취약점 식별</li>
-          <li>공격 재현 → 영향도 분석 → 시큐어 코딩 개선</li>
+          <li>SQL Injection, XSS, CSRF, 파일 업로드 등 취약점 식별</li>
+          <li>공격 재현 → 영향 분석 → 시큐어 코딩 개선</li>
           <li>CVSS 3.1 기반 위험도 산정</li>
           <li>PM 역할 수행 (일정·산출물 관리)</li>
         </ul>
 
-        <div class="project-links">
-          <a href="https://github.com/parkgeonah" target="_blank" class="link">
-            GitHub 바로가기
-          </a>
-        </div>
-
         <div class="project-tags">
-          <span>Final Project</span>
           <span>Web Pentest</span>
-          <span>Secure Coding</span>
+          <span>Final Project</span>
+          <span>CVSS 3.1</span>
         </div>
       </article>
 
       <!-- File Portfolio -->
       <article class="project-card file-project">
         <h3>📄 최종 모의해킹 보고서</h3>
-        <p class="project-subtitle">SAFE DUGOUT</p>
-        <ul class="project-list">
-          <li>공격 시나리오</li>
-          <li>CVSS 3.1 위험도</li>
-          <li>개선 권고 사항</li>
-        </ul>
         <a href="assets/files/SAFE_DUGOUT_Final_Pentest_Report.pdf"
            class="btn primary" download>
           PDF 다운로드
@@ -207,69 +116,13 @@
 
       <article class="project-card file-project">
         <h3>📦 PoC & 시큐어 코딩</h3>
-        <p class="project-subtitle">공격 코드 · 수정 코드</p>
-        <ul class="project-list">
-          <li>SQLi / XSS / CSRF PoC</li>
-          <li>Prepared Statement 적용</li>
-          <li>공격 캡처 자료</li>
-        </ul>
         <a href="assets/files/SAFE_DUGOUT_PoC_and_SecureCoding.zip"
            class="btn outline" download>
           ZIP 다운로드
         </a>
       </article>
 
-      <article class="project-card file-project">
-        <h3>📄 취약점 요약본</h3>
-        <p class="project-subtitle">면접관 열람용</p>
-        <ul class="project-list">
-          <li>취약점 목록 요약</li>
-          <li>공격 가능 시나리오</li>
-          <li>보안 인사이트</li>
-        </ul>
-        <a href="assets/files/SAFE_DUGOUT_Vulnerability_Summary.pdf"
-           class="btn outline" download>
-          PDF 다운로드
-        </a>
-      </article>
-
     </div>
-  </div>
-</section>
-
-<!-- ================= Timeline ================= -->
-<section id="timeline" class="section section-alt">
-  <div class="container section-container">
-    <div class="section-header">
-      <h2>Timeline</h2>
-    </div>
-
-    <div class="timeline">
-      <div class="timeline-item">
-        <span class="timeline-date">2025</span>
-        <h3>보안 입문</h3>
-        <p>웹·네트워크·시스템 보안 학습</p>
-      </div>
-      <div class="timeline-item">
-        <span class="timeline-date">2025</span>
-        <h3>SAFE DUGOUT 최종 프로젝트</h3>
-        <p>개발 + 모의해킹 + 보고서</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ================= Contact ================= -->
-<section id="contact" class="section">
-  <div class="container section-container">
-    <div class="section-header">
-      <h2>Contact</h2>
-    </div>
-
-    <ul>
-      <li>Email: example@gmail.com</li>
-      <li>GitHub: github.com/parkgeonah</li>
-    </ul>
   </div>
 </section>
 
@@ -277,6 +130,5 @@
   <p>© GeonAh Security Portfolio</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
